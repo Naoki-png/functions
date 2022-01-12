@@ -2,7 +2,7 @@ import * as functions from "firebase-functions";
 import {MeiliSearch} from "meilisearch";
 
 export const addToMeili = functions.https.onRequest(async () => {
-  const client = new MeiliSearch({host: "http://127.0.0.1:7700", apiKey: "HMBa7DAcx025w5rPi2SRDrxVQPXJKGHk"});
+  const client = new MeiliSearch({host: "http://159.65.143.214", apiKey: "HMBa7DAcx025w5rPi2SRDrxVQPXJKGHk"});
   const index = client.index("movies");
   const documents = [
     {id: 1, title: "Carol", genres: ["Romance", "Drama"]},
